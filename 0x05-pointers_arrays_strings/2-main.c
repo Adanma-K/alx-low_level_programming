@@ -1,16 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - test function for positive or negative
- * Return: 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
-
 int main(void)
 {
-        int i;
+    char *str;
+    int len;
 
-        i = 0;
-        positive_or_negative(i);
-
-        return (0);
+    str = "My first strlen!";
+    len = _strlen(str);
+    printf("%d\n", len);
+    return (0);
 }
